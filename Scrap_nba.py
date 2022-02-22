@@ -10,7 +10,7 @@ def scrap_nba(date):
 
     #Get GameId of the day from schedule
     GameId = []
-    with open('/local/home/ar245054/AndroidAssests/HotPicks/macros/NBA_Data/2021_2022/schedule/Schedule_'+str(date)+'.csv', newline='') as csvfile:
+    with open('/local/home/ar245054/AndroidAssests/HotPicks/HotPicksMacro/NBA_Data/2021_2022/schedule/Schedule_'+str(date)+'.csv', newline='') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
         for row in spamreader:
             if row[2]!='Id':

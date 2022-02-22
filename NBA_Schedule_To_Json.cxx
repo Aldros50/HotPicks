@@ -110,7 +110,7 @@ void NBA_Schedule_To_Json(Int_t Year = 2022, Int_t Month = 02, Int_t Day = 10){
   GameId->clear();
   Time->clear();
   
-  TString File = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/macros/NBA_Data/2021_2022/schedule/Schedule_" + date + (TString)".csv";
+  TString File = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/HotPicksMacro/NBA_Data/2021_2022/schedule/Schedule_" + date + (TString)".csv";
   std::ifstream DataFile(File,std::ios::in);
   
   if(DataFile.is_open()){

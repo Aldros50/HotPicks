@@ -71,7 +71,7 @@ void NBA_Data_To_Json(){
   TEAMS->push_back("WSH");
   //Getting GameId Collection
   vector<string> *GameId = new vector<string>();
-  TString FileId = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/macros/NBA_GameId_Collection_2021_2022.dat";
+  TString FileId = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/HotPicksMacro/NBA_GameId_Collection_2021_2022.dat";
   std::ifstream GameIdFile(FileId,std::ios::in);
   if(GameIdFile.is_open()){
 
@@ -129,7 +129,7 @@ void NBA_Data_To_Json(){
       Team->clear();
       VarName->clear();
 
-      TString File = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/macros/NBA_Data/2021_2022/NBA_ID_" + GameId->at(i-1) + (TString)".csv";
+      TString File = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/HotPicksMacro/NBA_Data/2021_2022/NBA_ID_" + GameId->at(i-1) + (TString)".csv";
       //cout << Counter << "  " << File << endl;
       std::ifstream DataFile(File,std::ios::in);
   
@@ -646,7 +646,7 @@ void NBA_Data_To_Json(){
     vector<string> *PLAYER = new vector<string>();
     vector<double> *VAL = new vector<double>();
   
-    TString FileBet = (TString)"../macros/bets/winamax_"+TEAM+(TString)".csv";
+    TString FileBet = (TString)"../HotPicksMacro/bets/winamax_"+TEAM+(TString)".csv";
   
     std::ifstream DataFileBet(FileBet,std::ios::in);
   
@@ -720,7 +720,7 @@ void NBA_Data_To_Json(){
     vector<string> *PLAYER_DK = new vector<string>();
     vector<double> *VAL_DK = new vector<double>();
   
-    TString FileBet_DK = (TString)"../macros/bets/draftking_"+TEAM+(TString)".csv";
+    TString FileBet_DK = (TString)"../HotPicksMacro/bets/draftking_"+TEAM+(TString)".csv";
   
     std::ifstream DataFileBet_DK(FileBet_DK,std::ios::in);
   

@@ -122,7 +122,7 @@ void NBA_Update_GameId_Collection(Int_t Year = 2022, Int_t Month = 2, Int_t Day 
       i=100000;
     }
     
-    TString File = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/macros/NBA_Data/2021_2022/schedule/Schedule_" + Date + (TString)".csv";
+    TString File = (TString)"/local/home/ar245054/AndroidAssests/HotPicks/HotPicksMacro/NBA_Data/2021_2022/schedule/Schedule_" + Date + (TString)".csv";
     std::ifstream DataFile(File,std::ios::in);
 
     cout << File << endl;
