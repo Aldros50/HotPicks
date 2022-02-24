@@ -33,8 +33,8 @@ echo "Copying to GitHup Repo :"
 cp *.html ../HotPicks/
 echo "Done"
 cd ../HotPicks/
-#git add .
-#git commit -m "update"
+git add .
+git commit -m "update"
 #git push
-#git push https://Aldros50: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@github.com/Aldros50/HotPicks.git --all
+git push https://Aldros50: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@github.com/Aldros50/HotPicks.git --all
 echo "Done"

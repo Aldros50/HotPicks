@@ -52,7 +52,7 @@ for a in url:
     #    d.execute_script("window.scrollTo(0, {});".format(i))
     #    time.sleep(1)
         
-    input('Done clicking:')
+    #input('Done clicking:')
     
     #y = 1000
     #for timer in range(0,5):
